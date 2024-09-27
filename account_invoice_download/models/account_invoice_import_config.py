@@ -36,7 +36,6 @@ class AccountInvoiceImportConfig(models.Model):
         action.update(
             {
                 "context": {
-                    "default_name": self.name,
                     "default_import_config_id": self.id,
                 },
             }
